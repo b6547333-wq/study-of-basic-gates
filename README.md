@@ -63,19 +63,38 @@ Y= A⊕B
 
 
 **PROGRAM**
+Program for logic gates and verify its truth table in quartus using Verilog programming
 
-M input a,b; output c,d,e,f,g,h; assign c = a & b; assign module exp1(a,b,c,d,e,f,g,h); d = a | b; assign e = a ^ b; assign f = ~(a & b); assign g = ~(a | b); assign h = ~(a ^ b); endmodule
+Developed by: THIRU SUBRAMANIA SAMI N RegisterNumber: 212225040176
+```
+module logic_circuit (
+    input a,
+    input b,
+    output c,
+    output d,
+    output e,
+    output x,
+    output y,
+    output z
+);
 
- Developed by:Thiru subramania sami  RegisterNumber: 25000201
- 
+    assign c = a & b;   // AND gate
+    assign d = a | b;   // OR gate
+    assign e = a ^ b;   // XOR gate
+    assign x = ~(a & b); // NAND gate
+    assign y = ~(a | b); // NOR gate
+    assign z = ~(a ^ b); // XNOR gate
+
+endmodule
+```
 **Logic symbol & Truthtable**
-<img width="1010" height="656" alt="image" src="https://github.com/user-attachments/assets/6117034d-7f17-4e78-b74e-f3d868f37b54" />
+<img width="1373" height="883" alt="image" src="https://github.com/user-attachments/assets/154dae23-5c62-4d56-b1b1-38cdd079d221" />
 
 **RTL realization Output:** 
-<img width="1477" height="314" alt="image" src="https://github.com/user-attachments/assets/51a4d81d-db44-44c6-b95b-b2f32e90b1ba" />
+<img width="1624" height="910" alt="image" src="https://github.com/user-attachments/assets/ce66c7e5-ce43-4e3c-97b5-afdfad445ecc" />
 
 **RTL**
-<img width="563" height="326" alt="image" src="https://github.com/user-attachments/assets/f655f620-a9b7-44cf-8e77-7aaf8be785f2" />
+<img width="1619" height="910" alt="image" src="https://github.com/user-attachments/assets/c0e48dde-800a-46da-a803-201eff3bc0de" />
 
 **Result:**
  Thus the basic logic gates are studied and the truth tables are verified
